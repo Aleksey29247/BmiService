@@ -1,14 +1,8 @@
 public class BmiService {
-
-    public BmiService() {
-    }
-
-    public static double calculate(int m, int h) {
-        if ((m <= 0) || (h <= 0)) {
+    public static double calculate(int weight, int height) {
+        if ((weight <= 0) || (height <= 0)) {
             return -1;
         }
-
-        return m / Math.pow((double) (h) / 100, 2);
+        return weight / Math.pow((double) (height) / 100, 2);
     }
-
 }

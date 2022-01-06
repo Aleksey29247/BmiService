@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        int h = 172;
-        int m = 74;
-        BmiService cBmi = new BmiService();
-        double bmi = cBmi.calculate(m, h);
+        int height = 172;
+        int weight = 74;
+        BmiService bodyMassIndex = new BmiService();
+        double bmi = bodyMassIndex.calculate(weight, height);
         if (bmi > 0) {
             System.out.printf(" Индекс массы тела  %.2f кг/м²\n", bmi);
         } else {
